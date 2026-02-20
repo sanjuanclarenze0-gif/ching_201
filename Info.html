@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spider_Multiverse</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image/giphy.gif" alt="gif" width="200px" height="200px">
+            <h1>Welcome To Spider Web</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-delete-left"></i>Back</a></li>
+            </ul>
+            <hr>
+             <div class="form-container">
+        <h3>Add New Record</h3>
+        <form id="userForm">
+            <div class="input-group">
+                <label>First Name:</label> <input type="text" id="fname" required>
+            </div>
+            <div class="input-group">
+                <label>Middle Name:</label> <input type="text" id="mname">
+            </div>
+            <div class="input-group">
+                <label>Last Name:</label> <input type="text" id="lname" required>
+            </div>
+            <div class="input-group">
+                <label>Age:</label> <input type="number" id="age" required>
+            </div>
+            <div class="input-group">
+                <label>Email:</label> <input type="email" id="email" required>
+            </div>
+            <button type="submit">Submit to Table</button>
+        </form>
+            </div>
+        </div>
+        <div class="content">
+             <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            </tbody>
+    </table>
+
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/script.js"></script>
